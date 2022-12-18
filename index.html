@@ -1,14 +1,28 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My Page</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+
+<head>
+  <title>My Page</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+  <div id="header">
     <h1>Albums</h1>
-    <ul id="albums-list"></ul>
-    <div id="loading-indicator" style="display: none">Loading...</div>
-    <script src="getTopAlbums.js"></script>
-    <script src="infiniteScroll.js"></script>
-  </body>
+  </div>
+  <ul id="albums-list"></ul>
+  <div id="loading-indicator">Loading...</div>
+  <script src="secrets.js"></script>
+  <script src="getTopAlbums.js"></script>
+  <script src="infiniteScroll.js"></script>
+  <script>
+    getTopAlbums();
+    // Call the setupInfiniteScroll function when the page loads
+    window.addEventListener('load', setupInfiniteScroll);
+  </script>
+  <div id="footer"></div>
+</body>
+
 </html>

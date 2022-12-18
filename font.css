@@ -1,0 +1,12 @@
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#albums-list li h3 {
+    font-size: 1.5em;
+}
+
+#albums-list li ul li {
+    font-size: 0.8em;
+}
